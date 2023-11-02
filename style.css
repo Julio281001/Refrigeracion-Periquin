@@ -1,3 +1,11 @@
+/*General*/
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -43,20 +51,23 @@ nav {
 .nav-btn:link,
 .nav-btn:visited {
   display: inline-block;
-
   position: absolute;
   right: 2%;
+}
 
+.contact-btn:link,
+.contact-btn:visited {
   text-decoration: none;
   background-color: #94d82d;
   color: #343a40;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 1rem;
+  text-transform: uppercase;
 }
 
-.nav-btn:hover,
-.nav-btn:active {
+.contact-btn:hover,
+.contact-btn:active {
   background-color: #82c91e;
 }
 
@@ -70,4 +81,45 @@ nav {
 .nav-option:hover,
 .nav-option:active {
   color: #343a40;
+}
+
+/*Hero*/
+
+.hero-section {
+  background-color: #f4fce3;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+
+.primary-heading {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3rem;
+  text-wrap: balance;
+}
+
+.description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 6.4rem;
+}
+
+.hero-btn:link,
+.hero-btn:link {
+  font-size: 1.2rem;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 0.5rem;
 }
