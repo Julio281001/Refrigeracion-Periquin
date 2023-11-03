@@ -153,10 +153,9 @@ nav {
 
 /*About us*/
 
-.aboutUs-section {
-  background-color: #f8f9fa;
+/* .aboutUs-section {
   padding: 9.6rem 0;
-}
+} */
 
 .aboutUs {
   max-width: 130rem;
@@ -168,21 +167,26 @@ nav {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 6.4rem;
 }
 
 .aboutUs-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6.4rem;
+  margin-bottom: 12.8rem;
+  background-color: #fff9db;
+  padding: 3.2rem 6.4rem;
+  border-radius: 1rem;
 }
 
 .aboutUs-description {
-  align-self: self-start;
+  align-self: center;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 1.5px;
+  order: 1;
 }
 
 .aboutUs-img {
