@@ -167,7 +167,7 @@ nav {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-align: center;
-  margin-bottom: 6.4rem;
+  grid-column: 1 / -1;
 }
 
 .aboutUs-content {
@@ -181,12 +181,16 @@ nav {
 }
 
 .aboutUs-description {
-  align-self: center;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 1.5px;
   order: 1;
+  align-self: self-start;
+}
+
+.aboutUs-description span {
+  font-weight: 600;
 }
 
 .aboutUs-img {
