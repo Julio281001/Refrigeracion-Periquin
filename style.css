@@ -321,3 +321,15 @@ nav {
   font-size: 1.2rem;
   font-weight: 400;
 }
+
+/*Footer*/
+
+/*Contact-section*/
+.contact {
+  margin: 0 auto;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
