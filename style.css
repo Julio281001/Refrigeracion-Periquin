@@ -153,9 +153,9 @@ nav {
 
 /*About us*/
 
-/* .aboutUs-section {
-  padding: 9.6rem 0;
-} */
+.aboutUs-section {
+  margin-bottom: 12.8rem;
+}
 
 .aboutUs {
   max-width: 130rem;
@@ -174,7 +174,6 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6.4rem;
-  margin-bottom: 12.8rem;
   background-color: #fff9db;
   padding: 3.2rem 6.4rem;
   border-radius: 1rem;
@@ -200,6 +199,10 @@ nav {
 }
 
 /*Servicios*/
+
+.servicios-section {
+  margin-bottom: 12.8rem;
+}
 
 .servicios {
   max-width: 130rem;
@@ -243,6 +246,11 @@ nav {
 }
 
 /*Contacts-section*/
+
+.contacts-section {
+  margin-bottom: 12.8rem;
+}
+
 .contactos {
   max-width: 50rem;
   margin: 0 auto;
