@@ -252,13 +252,13 @@ nav {
 }
 
 .contactos {
-  max-width: 50rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
 .contactos-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 3.2rem;
 }
 
@@ -294,6 +294,7 @@ nav {
 
 .tech-name {
   font-size: 1.6rem;
+  text-align: center;
 }
 
 .tech-info {
