@@ -241,3 +241,18 @@ nav {
   line-height: 1.6;
   letter-spacing: 1.2px;
 }
+
+/*Contacts-section*/
+.contactos {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.contactos-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contactos-heading {
+  grid-column: 1 / -1;
+}
