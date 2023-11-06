@@ -247,22 +247,22 @@ nav {
 
 /*Contacts-section*/
 
-.contacts-section {
+.tecnico-section {
   margin-bottom: 12.8rem;
 }
 
-.contactos {
+.tecnicos {
   max-width: 80rem;
   margin: 0 auto;
 }
 
-.contactos-content {
+.tecnicos-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 3.2rem;
 }
 
-.contactos-heading {
+.tecnicos-heading {
   grid-column: 1 / -1;
   font-size: 3rem;
   font-weight: 700;
@@ -285,7 +285,7 @@ nav {
   border-radius: 1.2rem;
 }
 
-.contact-info {
+.tecnico-info {
   padding: 2.4rem;
   display: flex;
   flex-direction: column;
@@ -297,17 +297,17 @@ nav {
   text-align: center;
 }
 
-.tech-info {
+.tech-media {
   list-style: none;
 }
 
-.tech-info li {
+.tech-media li {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
 
-.tech-info li:first-child {
+.tech-media li:first-child {
   margin-bottom: 1.6rem;
 }
 
