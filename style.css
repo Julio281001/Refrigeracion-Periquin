@@ -327,9 +327,67 @@ nav {
 /*Contact-section*/
 .contact {
   margin: 0 auto;
+  background-color: #f4fce3;
 }
 
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.4rem;
+  padding: 4.8rem;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.contact-description {
+  font-size: 1.8rem;
+}
+
+.contact-media li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.contact-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #66a80f;
+}
+
+.contact-address,
+.contact-phone,
+.contact-email {
+  font-size: 1.4rem;
+}
+
+.contact-address span,
+.contact-phone span,
+.contact-email span {
+  font-weight: 600;
+}
+
+.map {
+  width: 100%;
+}
+
+.copyrigth {
+  grid-column: 1 / -1;
+  background-color: #d8f5a2;
+}
+
+.copyrigth-description {
+  font-size: 1.2rem;
+  text-align: center;
 }
