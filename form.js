@@ -7,6 +7,14 @@ const direccionInput = document.querySelector("#form6Example4");
 const emailInput = document.querySelector("#form6Example5");
 const telefonoInput = document.querySelector("#form6Example6");
 const infoAdicionalInput = document.querySelector("#form6Example7");
+const inputs = [
+  nombreInput,
+  apellidosInput,
+  direccionInput,
+  emailInput,
+  telefonoInput,
+  infoAdicionalInput,
+];
 
 //Btns
 const enviarBtn = document.querySelector(".enviar-btn");
@@ -15,35 +23,33 @@ const enviarBtn = document.querySelector(".enviar-btn");
 const form = document.querySelector("form");
 
 //Functions
-function requiredFieldsAreFilled(nombre, telefono) {
-  return nombre !== "" && telefono !== "" ? true : false;
+function resetInputValues(inputs) {
+  inputs.forEach((input) => (input.value = ""));
 }
 
 function validInputs(inputs) {
-  const [nombre, telefono] = inputs;
-  if (!/^[a-zA-Z]+$/.test(nombre.trim())) {
-    //Validar Nombre
-    alert("Nombre invalido");
-    return false;
+  const [nombre, , , , telefono] = inputs;
+  let validNombre = true;
+  let validTelefono = true;
+  if (!/^[a-zA-Z]+$/.test(nombre.value.trim())) {
+    nombre.classList.add("invalid-input");
+    resetInputValues([nombre]);
+    validNombre = false;
   }
-  if (!/^\d{10}$/.test(telefono.trim())) {
-    //Validar Télefono
-    alert("Telefono invalido");
-    return false;
+  if (!/^\d{10}$/.test(telefono.value.trim())) {
+    telefono.classList.add("invalid-input");
+    resetInputValues([telefono]);
+    validTelefono = false;
   }
-
-  return true;
+  return validNombre && validTelefono ? true : false;
 }
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  if (!requiredFieldsAreFilled(nombreInput.value, telefonoInput.value)) {
-    alert("Asegurate de llenar los campos requeridos");
+  if (!validInputs(inputs)) {
     return;
   }
-  if (!validInputs([nombreInput.value, telefonoInput.value])) {
-    alert("invalid");
-    return;
-  }
-  alert("Valid");
+  nombreInput.classList.remove("invalid-input");
+  telefonoInput.classList.remove("invalid-input");
+  resetInputValues(inputs);
 });
