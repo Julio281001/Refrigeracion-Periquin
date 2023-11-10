@@ -43,6 +43,10 @@ header {
   color: #f03e3e;
 }
 
+.invalid-input {
+  border: 1px solid #f03e3e;
+}
+
 /*Footer*/
 
 .footer-form {
