@@ -20,24 +20,15 @@ function requiredFieldsAreFilled(nombre, telefono) {
 }
 
 function validInputs(inputs) {
-  const [nombre, apellidos, direccion, telefono] = inputs;
+  const [nombre, telefono] = inputs;
   if (!/^[a-zA-Z]+$/.test(nombre.trim())) {
     //Validar Nombre
     alert("Nombre invalido");
     return false;
   }
-  if (!/^[a-zA-Z\s]*$/.test(apellidos.trim())) {
-    //Validar apellidos
-    alert("Apellidos Invalido");
-    return false;
-  }
-  if (!/^[\w\s]*(?:\s*#\s*\d+)?$/.test(direccion.trim())) {
-    //Validar dirección
-    alert("dirección invalida");
-    return false;
-  }
   if (!/^\d{10}$/.test(telefono.trim())) {
     //Validar Télefono
+    alert("Telefono invalido");
     return false;
   }
 
@@ -50,14 +41,7 @@ form.addEventListener("submit", (e) => {
     alert("Asegurate de llenar los campos requeridos");
     return;
   }
-  if (
-    !validInputs([
-      nombreInput.value,
-      apellidosInput.value,
-      direccionInput.value,
-      telefonoInput.value,
-    ])
-  ) {
+  if (!validInputs([nombreInput.value, telefonoInput.value])) {
     alert("invalid");
     return;
   }
