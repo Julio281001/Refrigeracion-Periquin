@@ -44,6 +44,22 @@ function validInputs(inputs) {
   return validNombre && validTelefono ? true : false;
 }
 
+class Message {
+  constructor(body) {
+    this.body = body;
+  }
+
+  sendEmail() {
+    Email.send({
+      SecureToken: "6bb7878d-a8b4-4fc5-8578-389bcbc1c405",
+      To: "julio.estrada9216@alumnos.udg.mx",
+      From: "julio.estrada9216@alumnos.udg.mx",
+      Subject: "Contacto de cliente",
+      Body: this.body,
+    }).then((message) => console.log(message));
+  }
+}
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (!validInputs(inputs)) {
@@ -51,5 +67,15 @@ form.addEventListener("submit", (e) => {
   }
   nombreInput.classList.remove("invalid-input");
   telefonoInput.classList.remove("invalid-input");
+  const message = new Message(
+    `${nombreInput.value}${
+      apellidosInput.value ? " " + apellidosInput.value : ""
+    } quiere que lo contactes.\nAquí está su información:\nDirección: ${
+      direccionInput.value
+    }\nEmail: ${emailInput.value}\nTélefono: ${
+      telefonoInput.value
+    }\nInformación adicional: ${infoAdicionalInput.value}`
+  );
   resetInputValues(inputs);
+  message.sendEmail();
 });
