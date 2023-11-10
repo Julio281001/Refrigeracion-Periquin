@@ -20,7 +20,7 @@ function requiredFieldsAreFilled(nombre, telefono) {
 }
 
 function validInputs(inputs) {
-  const [nombre, apellidos, direccion, email, telefono] = inputs;
+  const [nombre, apellidos, direccion, telefono] = inputs;
   if (!/^[a-zA-Z]+$/.test(nombre.trim())) {
     //Validar Nombre
     alert("Nombre invalido");
@@ -55,7 +55,6 @@ form.addEventListener("submit", (e) => {
       nombreInput.value,
       apellidosInput.value,
       direccionInput.value,
-      emailInput.value,
       telefonoInput.value,
     ])
   ) {
