@@ -78,4 +78,10 @@ form.addEventListener("submit", (e) => {
   );
   resetInputValues(inputs);
   message.sendEmail();
+  Swal.fire({
+    title: "¡Gracias por contactarnos!",
+    text: "Uno de nuestros tecnicos se pondrá en contacto con usted lo mas pronto posible.",
+    icon: "success", // Puedes usar 'success', 'error', 'info', 'warning', etc.
+    confirmButtonText: "¡Entendido!",
+  });
 });
