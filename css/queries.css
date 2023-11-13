@@ -1,9 +1,43 @@
 /*Max 1344px*/
 @media (max-width: 84em) {
+  html {
+    font-size: 56.25%;
+  }
+
   .hero,
   .marcas,
   .aboutUs,
   .servicios {
     max-width: 120rem;
+  }
+
+  .aboutUs-description {
+    font-size: 1.8rem;
+  }
+}
+
+/*Max 1250px*/
+@media (max-width: 78em) {
+  html {
+    font-size: 53.125%;
+  }
+
+  .hero,
+  .marcas,
+  .aboutUs,
+  .servicios {
+    max-width: 110rem;
+  }
+
+  .aboutUs-description {
+    font-size: 1.6rem;
+  }
+
+  .servicio-heading {
+    font-size: 1.8rem;
+  }
+
+  .servicio-description {
+    font-size: 1.4rem;
   }
 }
