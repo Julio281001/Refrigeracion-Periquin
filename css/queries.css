@@ -1,0 +1,9 @@
+/*Max 1344px*/
+@media (max-width: 84em) {
+  .hero,
+  .marcas,
+  .aboutUs,
+  .servicios {
+    max-width: 120rem;
+  }
+}
