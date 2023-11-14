@@ -41,3 +41,68 @@
     font-size: 1.4rem;
   }
 }
+
+/*Max 980px*/
+@media (max-width: 61em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img {
+    width: 60%;
+    justify-self: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .aboutUs {
+    max-width: 100rem;
+  }
+
+  .aboutUs-content {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .aboutUs-img {
+    width: 60%;
+    justify-self: center;
+  }
+
+  .aboutUs-description {
+    width: 60%;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .servicios {
+    max-width: 60rem;
+  }
+
+  .servicios-disponibles {
+    grid-template-columns: 1fr;
+  }
+
+  .servicio {
+    justify-self: center;
+  }
+
+  /* .tecnicos-content {
+    grid-template-columns: 1fr 1fr;
+  } */
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .contact-map {
+    grid-row: 1;
+  }
+}
