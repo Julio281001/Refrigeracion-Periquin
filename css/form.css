@@ -11,8 +11,10 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
-  position: relative;
 }
 
 /*Header*/
@@ -57,13 +59,6 @@ header {
 }
 
 /*Footer*/
-
-.footer-form {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .copyrigth-form {
   height: 100%;
   background-color: #d8f5a2;
