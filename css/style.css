@@ -23,6 +23,14 @@ body {
   font-weight: 400;
 }
 
+/*H3*/
+h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #343a40;
+}
+
 /*Header*/
 
 .main-header {
@@ -42,7 +50,8 @@ body {
   display: inline-block;
   text-decoration: none;
   background-color: #94d82d;
-  color: #343a40;
+  color: #495057;
+  font-size: 1.4rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 1rem;
@@ -53,6 +62,8 @@ body {
 .contact-btn:active {
   background-color: #82c91e;
 }
+
+/*Mobile nav*/
 
 .mobile-nav-btn {
   border: none;
@@ -86,7 +97,7 @@ body {
 .nav-option:visited {
   text-decoration: none;
   text-transform: uppercase;
-  color: #343a40;
+  color: #495057;
   font-weight: 600;
 }
 
@@ -117,14 +128,14 @@ body {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.05;
-  color: #333;
+  color: #343a40;
   letter-spacing: -0.5px;
   margin-bottom: 3rem;
-  text-wrap: balance;
 }
 
 .hero-description {
   font-size: 2rem;
+  color: #495057;
   line-height: 1.6;
   margin-bottom: 6.4rem;
 }
@@ -137,19 +148,13 @@ body {
 /*Marcas*/
 
 .marcas {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.4rem;
   margin-bottom: 9rem;
-}
-
-.marcas-heading {
-  font-size: 2.4rem;
-  font-weight: 600;
-  letter-spacing: 1.5px;
 }
 
 .marcas-logos {
@@ -165,14 +170,11 @@ body {
 }
 
 .aboutUs {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
 .aboutUs-heading {
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 1.5px;
   text-align: center;
   grid-column: 1 / -1;
 }
@@ -187,7 +189,7 @@ body {
 }
 
 .aboutUs-description {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 1.5px;
@@ -211,17 +213,13 @@ body {
 }
 
 .servicios {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
 .servicios-heading {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
   text-align: center;
   margin-bottom: 4.8rem;
-  color: #343a40;
 }
 
 .servicios-disponibles {
@@ -270,12 +268,8 @@ body {
 
 .tecnicos-heading {
   grid-column: 1 / -1;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
   text-align: center;
   margin-bottom: 3.2rem;
-  color: #343a40;
 }
 
 .tecnico {
@@ -348,12 +342,6 @@ body {
   align-items: flex-start;
   gap: 2.4rem;
   padding: 4.8rem;
-}
-
-.contact-heading {
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 1.5px;
 }
 
 .contact-description {
