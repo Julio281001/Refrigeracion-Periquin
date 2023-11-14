@@ -48,6 +48,40 @@
     font-size: 50%;
   }
 
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+  }
+
+  .mobile-nav-open .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-nav-open .open-menu-icon {
+    display: none;
+  }
+
+  .mobile-nav-open .close-menu-icon {
+    display: block;
+  }
+
+  .nav-options {
+    flex-direction: column;
+    font-size: 3rem;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+    z-index: 1;
+  }
+
   .hero {
     grid-template-columns: 1fr;
   }
@@ -59,6 +93,10 @@
 
   .hero-text {
     text-align: center;
+  }
+
+  .marcas {
+    max-width: 80rem;
   }
 
   .aboutUs {
@@ -92,10 +130,6 @@
   .servicio {
     justify-self: center;
   }
-
-  /* .tecnicos-content {
-    grid-template-columns: 1fr 1fr;
-  } */
 
   .contact-content {
     grid-template-columns: 1fr;

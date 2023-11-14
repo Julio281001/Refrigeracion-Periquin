@@ -15,17 +15,50 @@
     <link href="css/queries.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <img class="logo" src="Images/Logo.png" />
-      <nav>
+      <nav class="main-nav">
         <ul class="nav-options">
           <li><a href="#marcas" class="nav-option">Acerca de nosotros</a></li>
           <li><a href="#servicios-section" class="nav-option">Servicios</a></li>
           <li><a href="#contact-section" class="nav-option">Contacto</a></li>
           <li><a href="blog.html" class="nav-option">Blog</a></li>
+          <li>
+            <a href="form.html" class="contact-btn header-btn">Contactanos</a>
+          </li>
         </ul>
       </nav>
-      <a href="form.html" class="contact-btn header-btn">Contactanos</a>
+
+      <button class="mobile-nav-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mobile-nav-icon open-menu-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mobile-nav-icon close-menu-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
     </header>
     <main>
       <section class="hero-section">
