@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #495057;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-weight: 400;
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto auto;
+  padding: 6.4rem 12.8rem;
+  height: 100%;
+}
+
+.blog-img {
+  justify-self: center;
+  align-self: center;
+  width: 27.1rem;
+  width: 27.1rem;
+}
+
+.not-found-msg {
+  justify-self: center;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.not-found-msg h1 {
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.not-found-msg h2 {
+  font-size: 3.2rem;
+}
+
+.not-found-msg h2 span {
+  color: #e03131;
+}
+
+.not-found-msg p {
+  font-size: 1.6rem;
+}
+
+.not-found-msg a:link,
+.not-found-msg a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1.6rem 3.2rem;
+  background-color: #1c7ed6;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.not-found-msg a:hover,
+.not-found-msg a:active {
+  background-color: #1864ab;
+}
