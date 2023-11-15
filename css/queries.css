@@ -287,6 +287,11 @@
     flex-direction: column;
     gap: 2.4rem;
   }
+
+  /*Blog*/
+  .main-blog {
+    padding: 3.2rem 6.4rem;
+  }
 }
 
 /*Max 350PX*/

@@ -44,10 +44,12 @@ main {
 .not-found-msg h1 {
   font-size: 6rem;
   font-weight: 800;
+  text-align: center;
 }
 
 .not-found-msg h2 {
   font-size: 3.2rem;
+  text-align: center;
 }
 
 .not-found-msg h2 span {
@@ -56,6 +58,7 @@ main {
 
 .not-found-msg p {
   font-size: 1.6rem;
+  text-align: center;
 }
 
 .not-found-msg a:link,
