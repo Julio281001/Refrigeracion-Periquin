@@ -254,6 +254,7 @@
 
 /*Max 420PX*/
 @media (max-width: 26em) {
+  /*Index.html*/
   .hero {
     max-width: 40rem;
   }
@@ -280,6 +281,11 @@
 
   .servicios {
     max-width: 35rem;
+  }
+  /*Form.html*/
+  .header-form {
+    flex-direction: column;
+    gap: 2.4rem;
   }
 }
 
