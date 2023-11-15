@@ -15,28 +15,6 @@
     max-width: 110rem;
   }
 
-  .tecnicos {
-    max-width: 70rem;
-  }
-
-  .aboutUs-description {
-    font-size: 1.6rem;
-  }
-}
-
-/*Max 1250px*/
-@media (max-width: 78em) {
-  html {
-    font-size: 53.125%;
-  }
-
-  .hero,
-  .marcas,
-  .aboutUs,
-  .servicios {
-    max-width: 110rem;
-  }
-
   .aboutUs-description {
     font-size: 1.6rem;
   }
@@ -50,12 +28,25 @@
   }
 }
 
-/*Max 980px*/
-@media (max-width: 61em) {
-  html {
-    font-size: 50%;
+/*Max 1250px*/
+@media (max-width: 78em) {
+  .hero {
+    max-width: 110rem;
   }
 
+  .marcas,
+  .aboutUs,
+  .servicios {
+    max-width: 105rem;
+  }
+
+  .aboutUs-description {
+    font-size: 1.5rem;
+  }
+}
+
+/*Max 1050px*/
+@media (max-width: 65em) {
   .main-nav {
     background-color: rgba(255, 255, 255, 0.97);
     position: absolute;
@@ -95,7 +86,7 @@
   }
 
   .hero-img {
-    width: 60%;
+    width: 80%;
     justify-self: center;
   }
 
@@ -103,27 +94,23 @@
     text-align: center;
   }
 
-  .marcas {
-    max-width: 80rem;
-  }
-
   .aboutUs {
-    max-width: 100rem;
+    max-width: 90rem;
   }
 
   .aboutUs-content {
     grid-template-columns: 1fr;
-    gap: 3.2rem;
+    gap: 2.4rem;
   }
 
   .aboutUs-img {
-    width: 60%;
+    width: 100%;
     justify-self: center;
   }
 
   .aboutUs-description {
-    width: 60%;
-    text-align: center;
+    width: 100%;
+    text-align: justify;
     justify-self: center;
   }
 
@@ -146,5 +133,176 @@
 
   .contact-map {
     grid-row: 1;
+  }
+}
+
+/*Max 900PX*/
+@media (max-width: 56em) {
+  html {
+    /*8PX*/
+    font-size: 50%;
+  }
+
+  .hero {
+    max-width: 90rem;
+  }
+
+  .aboutUs {
+    max-width: 80rem;
+  }
+
+  .aboutUs-description {
+    font-size: 1.6rem;
+  }
+
+  .servicios {
+    max-width: 60rem;
+  }
+
+  .tecnicos {
+    max-width: 40rem;
+  }
+
+  .tecnicos-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*Max 700PX*/
+@media (max-width: 44em) {
+  .hero {
+    max-width: 70rem;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+
+  .marcas-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .marcas-img {
+    justify-self: center;
+  }
+
+  .marcas-img:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .aboutUs {
+    max-width: 60rem;
+  }
+
+  .aboutUs-content {
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .aboutUs-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .aboutUs-description {
+    width: 100%;
+  }
+
+  .servicios {
+    max-width: 50rem;
+  }
+}
+
+/*Max 500PX*/
+@media (max-width: 31em) {
+  .hero {
+    max-width: 50rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .marcas {
+    max-width: 50rem;
+  }
+
+  .aboutUs {
+    max-width: 50rem;
+  }
+
+  .aboutUs-content {
+    grid-template-rows: auto auto 2fr;
+  }
+
+  .aboutUs-description {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .aboutUs-img {
+    height: auto;
+  }
+
+  .servicios {
+    max-width: 40rem;
+  }
+}
+
+/*Max 420PX*/
+@media (max-width: 26em) {
+  .hero {
+    max-width: 40rem;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .marcas {
+    width: 40rem;
+  }
+
+  .marcas-heading {
+    text-align: center;
+  }
+
+  .aboutUs {
+    max-width: 40rem;
+  }
+
+  .aboutUs-content {
+    padding: 1.6rem 3.2rem;
+  }
+
+  .servicios {
+    max-width: 35rem;
+  }
+}
+
+/*Max 350PX*/
+@media (max-width: 22em) {
+  html {
+    /*7PX*/
+    font-size: 43.75%;
+  }
+
+  .hero {
+    max-width: 35rem;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .primary-heading {
+    font-size: 5.2rem;
+  }
+
+  .marcas {
+    max-width: 35rem;
   }
 }
